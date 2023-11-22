@@ -8,11 +8,15 @@
   --white: #fff;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --grey: #2e2f42;
 }
 
 body {
   background-color: #fff;
   font-family: var(--font-family-roboto);
+}
+
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -116,15 +120,18 @@ nav ul li .active {
 .contact-info li a:hover {
   color: var(--ocean);
 }
+
 .hero {
-  background: var(--navy-blue);
+  background: url("/images/hero_bg1.jpg");
   height: 600px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+
 .hero > h1 {
   color: var(--white);
   text-align: center;
@@ -172,6 +179,15 @@ main {
 .core-values > li {
   max-width: 264px;
 }
+
+.core-values > li > .core-card > .core-img {
+  background-color: var(--cloud);
+  padding: 24px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .core-values > li > h3 {
   color: var(--navy-blue);
   font-family: var(--font-family-roboto);
@@ -217,6 +233,7 @@ p {
   margin: 0;
 }
 h3 {
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 .team {
@@ -232,9 +249,7 @@ h3 {
   gap: 32px;
   border-radius: 0px 0px 4px 4px;
   background: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   text-align: center;
   padding-bottom: 32px;
 }
@@ -256,6 +271,39 @@ h3 {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+.soc-med {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.soc-med-bg {
+  background-color: var(--iris);
+  border-radius: 25px;
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+}
+
+.customers-section {
+  max-width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+.customers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
 
 /* main */
 
@@ -263,11 +311,14 @@ h3 {
 footer {
   background: var(--navy-blue);
   padding: 101.5px 0 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .footer-deatails {
-  max-width: 1158px;
-  margin: 0 auto;
+  padding-left: 156px;
+  padding-right: 120px;
 }
 
 .footer-deatails .logo {
@@ -298,6 +349,16 @@ footer {
   line-height: 24px;
   letter-spacing: 0.32px;
   margin-top: 17.5px;
+}
+
+.footer-soc-med > p {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 /* footer */
